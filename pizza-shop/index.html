@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>🍕 Pizza Shop</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#cart">Panier</a>
+        </nav>
+    </header>
+    <main>
+        <section id="menu" class="menu-section">
+            <h2>Nos Pizzas</h2>
+            <div class="pizza-list">
+                <!-- Les pizzas seront injectées ici par JS -->
+            </div>
+        </section>
+        <section id="cart" class="cart-section">
+            <h2>Votre panier</h2>
+            <div class="cart-list">
+                <p class="empty-cart">Votre panier est vide.</p>
+            </div>
+            <div class="cart-total">
+                Total : <span id="cart-total">0 €</span>
+            </div>
+            <button class="order-btn">Commander</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pizza Shop. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

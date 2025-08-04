@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <i class="fas fa-code logo-icon"></i>
+                    <span class="logo-text"><span class="accent">C</span>heick.</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home" aria-label="Accueil"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#services" aria-label="Services"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="#skills" aria-label="Compétences"><i class="fas fa-chart-line"></i> Skills</a></li>
+                    <li><a href="#projets" aria-label="Projets"><i class="fas fa-briefcase"></i> Projets</a></li>
+                    <li><a href="#contact" aria-label="Contact"><i class="fas fa-envelope"></i> Contacts</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div id="menu-icon" class="bx bx-menu" aria-label="Menu mobile"></div>
+                </div>
+            </nav>
+        </header>
+        
+
+        <section class="home" id="home">
+            <div class="home-content">
+              <h1>Salut, moi c'est <span aria-label="nom">Cheick</span></h1>
+              <h2>Je suis <span class="typed" id="typed" aria-live="polite"></span></h2>
+              <p>
+                Développeur web passionné basé au Burkina Faso, je conçois des sites modernes, responsives et performants.<br>
+                Je vous accompagne dans la création de vos projets digitaux avec une approche centrée sur l'expérience utilisateur.
+              </p>
+              <div class="home-buttons">
+                <a href="#contact" class="btn">
+                  <i class="fas fa-envelope"></i> Me contacter
+                </a>
+                <a href="#projets" class="btn btn-secondary">
+                  <i class="fas fa-folder-open"></i> Voir mes projets
+                </a>
+              </div>
+              <div class="availability-indicator">
+                <span class="status-dot"></span>
+                <small>Disponible pour de nouveaux projets</small>
+              </div>
+            </div>
+            <div class="home-image">
+              <img src="images/cheick.jpg" alt="Développeur Cheick" class="profile-image" loading="lazy">
+              <div class="particles-bg"></div>
+            </div>
+          </section>
+          
+
+        <section id="services" class="service">
+            <div class="main-text">
+                <span>Ce que je propose</span>
+                <h2>Mes services</h2>
+                <p class="service-intro">
+                    Voici les services que je propose pour accompagner vos projets digitaux, du design à la mise en ligne.
+                </p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Création d’interfaces web modernes, responsives et performantes.</p>
+                    <div class="service-techs">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-react" title="ReactJS"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Développement d’API robustes et gestion de bases de données sécurisées.</p>
+                    <div class="service-techs">
+                        <i class="fab fa-node-js" title="Node.js"></i>
+                        <i class="fas fa-database" title="MongoDB/SQL"></i>
+                        <i class="fab fa-python" title="Python"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Conception d’expériences utilisateurs intuitives et attractives.</p>
+                    <div class="service-techs">
+                        <i class="fab fa-figma" title="Figma"></i>
+                        <i class="fas fa-pencil-ruler" title="UI/UX"></i>
+                        <i class="fab fa-adobe" title="Adobe XD"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skill">
+            <div class="main-text">
+                <span>Compétences techniques et professionnelles</span>
+                <h2>My Skills</h2>
+                <p style="color:#ccc; margin-top:10px; font-size:1.1rem;">Voici les compétences que j’ai acquises au fil de mes projets et formations, aussi bien techniques que professionnelles.</p>
+            </div>
+            <div class="skill-main">
+                <div class="skill-left">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                            <p>HTML5</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+                            <p>CSS3</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fab fa-js-square"></i></span>
+                            <p>JavaScript</p>
+                            <p>52%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="javascript"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fab fa-react"></i></span>
+                            <p>ReactJS</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="reactjs"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fas fa-database"></i></span>
+                            <p>MongoDB</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="mongodb"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fab fa-python"></i></span>
+                            <p>Python</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="python"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fab fa-google-play"></i></span>
+                            <p>Dart</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="dart"></span>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="info">
+                            <span class="skill-icon"><i class="fas fa-pencil-ruler"></i></span>
+                            <p>UI/UX Design</p>
+                            <p>65%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="uiux"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-right">
+                    <h3>Professional Skills</h3>
+                    <div class="professional">
+                        <div class="box" title="Capacité à collaborer efficacement en équipe pour atteindre des objectifs communs.">
+                            <div class="circle" data-dots="80" data-percent="90"></div>
+                            <div class="text">
+                              <big>90%</big>
+                              <small>Team Work</small>
+                            </div>
+                        </div>
+                        <div class="box" title="Créativité dans la résolution de problèmes et la conception de solutions innovantes.">
+                            <div class="circle" data-dots="80" data-percent="80"></div>
+                            <div class="text">
+                              <big>80%</big>
+                              <small>Creativity</small>
+                            </div>
+                        </div>
+                        <div class="box" title="Gestion efficace des projets, des ressources et des délais.">
+                            <div class="circle" data-dots="80" data-percent="55"></div>
+                            <div class="text">
+                              <big>55%</big>
+                              <small>Project Management</small>
+                            </div>
+                        </div>
+                        <div class="box" title="Communication claire, orale et écrite, avec les clients et les équipes.">
+                            <div class="circle" data-dots="80" data-percent="70"></div>
+                            <div class="text">
+                              <big>70%</big>
+                              <small>Communication</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="projets">
+            <div class="main-text">
+                <span>Quelques exemples de projets</span>
+                <h2>Mes réalisations</h2>
+                <p class="portfolio-intro">
+                    Voici quelques-uns de mes projets récents, illustrant mon savoir-faire en développement web et design.
+                    Pour voir le projet clicquer sur l'image ensuite sur le lien en dessous. 
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="fillter-buttons">
+                    <button class="btn" data-filter="all">Tous</button>
+                    <button class="btn" data-filter=".product">Produit</button>
+                    <button class="btn" data-filter=".inter">Interactivité</button>
+                    <button class="btn" data-filter=".web">Web App</button>
+                </div>
+            </div>
+
+            <div class="portfolio-gallery">
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="pizza-shop/pizza-demo.jpeg" alt="Pizza Shop">
+                    </div>
+                    <div class="port-content">
+                        <h3>Pizza Shop</h3>
+                        <p>Mini-site e-commerce de vente de pizzas avec panier dynamique (HTML, CSS, JS).</p>
+                        <div class="portfolio-techs">
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js-square" title="JavaScript"></i>
+                        </div>
+                        <a href="pizza-shop/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="images/cheick.jpg" alt="Mon portfolio">
+                    </div>
+                    <div class="port-content">
+                        <h3>Mon Portfolio</h3>
+                        <p>
+                            Ce site est mon portfolio personnel, conçu et développé par moi-même. Il met en avant mes compétences en UI/UX, l’intégration HTML5/CSS3, l’utilisation de JavaScript moderne, et l’organisation de projets.<br>
+                            Le design a été pensé sur Figma, puis intégré avec soin pour garantir une expérience utilisateur fluide, responsive et professionnelle.
+                        </p>
+                        <div class="portfolio-techs">
+                            <i class="fab fa-figma" title="Figma"></i>
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js-square" title="JavaScript"></i>
+                        </div>
+                        <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="images/rear-view-programmer-working-all-night-long.jpg" alt="App de chat Python">
+                    </div>
+                    <div class="port-content">
+                        <h3>Jeu de batonnet</h3>
+                        <p>Application de chat en temps réel développée avec Python et Socket.io.</p>
+                        <div class="portfolio-techs">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-bolt" title="Socket.io"></i>
+                        </div>
+                        <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contant">
+            <div class="main-text">
+                <span>As me question</span>
+                <h2>Contact me!</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informations de contact</h3>
+                    <p>Je suis disponible pour des opportunités de freelance ou d'emploi. N'hésitez pas à me contacter pour discuter de votre projet.</p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> somacheick@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +226 55 46 72 03 <a href="https://wa.me/55467203" target="_blank" rel="noopener noreferrer" class="contact-link">Envoyer un message</a></li>
+                        <li><i class="fab fa-linkedin-in"></i> Mon profil Linkedin <a href="https://linkedin.com/in/yambia-cheick-abdourazak-soma-7409262aa" target="_blank" rel="noopener noreferrer" class="contact-link">Visiter mon profil</a></li>
+                        <li><i class="fab fa-github"></i> Mon profil github <a href="https://github.com/Abdourazak22/MesProjets" target="_blank" rel="noopener noreferrer" class="contact-link">Voir mes repositories</a></li>
+                    </ul>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Nom complet" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    <div class="btn-box formBtn">
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </div>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-profile">
+                    <img src="images/cheick.jpg" alt="Photo de Cheick" class="footer-avatar">
+                    <div>
+                        <span class="footer-name">Cheick</span><br>
+                        <span class="footer-role">Développeur web</span>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Abdourazak22/MesProjets" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yambia-cheick-abdourazak-soma-7409262aa" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/22655467203" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:somacheick@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cheick. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <script src="mixitup.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  new Typed('#typed', {
+    strings: ["Développeur Web", "Freelancer", "Créateur d’expériences digitales"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 2000,
+    loop: true
+  });
+</script>
+
+    </body>
+</html>  
+
+
+
